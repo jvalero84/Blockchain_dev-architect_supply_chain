@@ -23,6 +23,13 @@ And... a couple of screenshots of the dapp connected to the smart contract deplo
 
 ![Log of transaction records](images/dapp_sc2.png)
 
+These are the software versions used to develop and test the project:
+
+Truffle v4.1.14
+Solidity v0.4.24
+node v14.17.5
+web3: 1.2.1
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
