@@ -2,16 +2,26 @@
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
-The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+The UML diagrams that define the architecture of the DAPP are the following:
 
-![truffle test](images/ftc_farm_details.png)
+![Activity](images/activity.drawio.png)
 
-![truffle test](images/ftc_product_details.png)
+![Sequence](images/sequence.drawio.png)
 
-![truffle test](images/ftc_transaction_history.png)
+![State](images/state.drawio.png)
 
+![Classes](images/classes.drawio.png)
+
+The Smart contrat SupplyChain.sol has been deployed on the Rinkeby network with address: 0xD9E9734A26c99e396eE8dE225623a5c43fB2121e
+
+![Contract on Rinkeby](images/contract_rinkeby.png)
+
+And... a couple of screenshots of the dapp connected to the smart contract deployed on Rinkeby.
+
+![Buy Item](images/dapp_sc1.png)
+
+![Log of transaction records](images/dapp_sc2.png)
 
 ## Getting Started
 
@@ -27,14 +37,14 @@ Give examples (to be clarified)
 
 ### Installing
 
-> The starter code is written for **Solidity v0.4.24**. At the time of writing, the current Truffle v5 comes with Solidity v0.5 that requires function *mutability* and *visibility* to be specified (please refer to Solidity [documentation](https://docs.soliditylang.org/en/v0.5.0/050-breaking-changes.html) for more details). To use this starter code, please run `npm i -g truffle@4.1.14` to install Truffle v4 with Solidity v0.4.24. 
+> The starter code is written for **Solidity v0.4.24**. At the time of writing, the current Truffle v5 comes with Solidity v0.5 that requires function *mutability* and *visibility* to be specified (please refer to Solidity [documentation](https://docs.soliditylang.org/en/v0.5.0/050-breaking-changes.html) for more details). To use this starter code, please run `npm i -g truffle@4.1.14` to install Truffle v4 with Solidity v0.4.24.
 
 A step by step series of examples that tell you have to get a development env running
 
 Clone this repository:
 
 ```
-git clone https://github.com/udacity/nd1309/tree/master/course-5/project-6
+git clone https://github.com/jvalero84/Blockchain_dev-architect_supply_chain.git
 ```
 
 Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
@@ -95,18 +105,4 @@ npm run dev
 ## Built With
 
 * [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
-* [IPFS](https://ipfs.io/) - IPFS is the Distributed Web | A peer-to-peer hypermedia protocol
-to make the web faster, safer, and more open.
 * [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
-
-
-## Authors
-
-See also the list of [contributors](https://github.com/your/project/contributors.md) who participated in this project.
-
-## Acknowledgments
-
-* Solidity
-* Ganache-cli
-* Truffle
-* IPFS
